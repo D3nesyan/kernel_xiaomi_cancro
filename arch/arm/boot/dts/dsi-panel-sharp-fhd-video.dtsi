@@ -76,6 +76,8 @@
 		qcom,mdss-pan-physical-height-dimension = <109>;
 		qcom,mdss-panel-on-param-delay = <100>;
 		qcom,dispparam-enabled;
+		qcom,ulps-enabled;
+		qcom,panel-allow-phy-poweroff;
 		qcom,mdss-dsi-dispparam-ceon-command = [
 				39 01 00 00 21 00 02 00 00
 				29 01 00 00 00 00 02 b0 04
