@@ -3,7 +3,7 @@
  * them to run sooner, but does not allow tons of sleepers to
  * rip the spread apart.
  */
-SCHED_FEAT(GENTLE_FAIR_SLEEPERS, true)
+SCHED_FEAT(GENTLE_FAIR_SLEEPERS, false)
 
 /*
  * Place new tasks ahead so that they do not starve already running
@@ -24,7 +24,7 @@ SCHED_FEAT(AFFINE_WAKEUPS, true)
  * wakeup-preemption), since its likely going to consume data we
  * touched, increases cache locality.
  */
-SCHED_FEAT(NEXT_BUDDY, false)
+SCHED_FEAT(NEXT_BUDDY, true)
 
 /*
  * Prefer to schedule the task that ran last (when we did
@@ -58,7 +58,7 @@ SCHED_FEAT(OWNER_SPIN, true)
 /*
  * Decrement CPU power based on time not spent running tasks
  */
-SCHED_FEAT(NONTASK_POWER, true)
+SCHED_FEAT(NONTASK_POWER, false)
 
 /*
  * Queue remote wakeups on the target CPU and process them
